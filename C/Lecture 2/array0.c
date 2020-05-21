@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
+#include <ctype.h>
 
 int main()
 {
@@ -16,7 +17,7 @@ int main()
 
     for (int i = 0, n = strlen(s); i < n; i++)
     {
-        printf("%c", s[i]);
+        printf("%c", toupper(s[i]));
     }
     printf("\n");
     printf("%s\n", s);
