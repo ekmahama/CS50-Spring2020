@@ -120,7 +120,7 @@ void deleteList(node **list)
         *list = NULL;
     }
 
-    else if ((*list)->next != NULL)
+    else
     {
         node *tmp;
         tmp = *list;
