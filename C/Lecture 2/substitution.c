@@ -18,21 +18,21 @@ int main(int argc, char *argv[])
     {
         return 1;
     }
-
+    
     //printf("Key is valid\n");
 
     string plaintext = get_string("plaintext: "); // Prompt user for plaintext
     int sz = strlen(plaintext);
-    char encipherArr[sz];  // Create an array for cipher text
+    char encipherArr[sz];                         // Create an array for cipher text
     string keyMap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Key map for cipher keys
 
     for (int i = 0, n = sz; i < n; i++)
     {
         for (int j = 0, m = strlen(key); j < m; j++)
         {
-            if (toupper(plaintext[i]) == keyMap[j]) // Get index for plaintext letter 
+            if (toupper(plaintext[i]) == keyMap[j]) // Get index for plaintext letter
             {
-                encipherArr[i] = key[j]; // Replace plain text letter by its corresponding key 
+                encipherArr[i] = key[j]; // Replace plain text letter by its corresponding key
             }
         }
     }
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     // Maintain upper case and lower case
     for (int i = 0; i < sz; i++)
     {
-        if (islower(plaintext[i]))  // Check if plaintext letter is lowecase
+        if (islower(plaintext[i])) // Check if plaintext letter is lowecase
         {
             encipherArr[i] = tolower(encipherArr[i]); // set ciphertext letter to lower case
         }

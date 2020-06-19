@@ -14,7 +14,7 @@ void visualizeSort(int arr[], int n);
 
 int main(int argc, char *argv[])
 {
-    int array[] = {21, 9, 18, 14, 3, 7, 2, 19, 20, 10, 8, 1, 5};
+    int array[] = {21, 9, 18, 14, 3, 7, 2, 19, 20, 10, 8, 1, 5,-2,-18};
     //int array[] = {1, 2, 3, 3, 4, 5, 6, 7, 8, 9,10, 11};
 
     int sz = sizeof(array) / sizeof(int);

@@ -30,14 +30,12 @@ int main(int argc, char const *argv[])
         visualizeSort(grades, n);
         printf("\n");
         printArray(grades, n);
-         sleep(2); // sleep for 3 seconds
+        sleep(2); // sleep for 3 seconds
     }
 
     // visualizeSort(grades, n);
     // printf("\n");
     // printArray(grades, n);
-
-   
 
     return 0;
 }

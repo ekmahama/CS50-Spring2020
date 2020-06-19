@@ -7,6 +7,12 @@ struct Person
     string number;
 };
 
+typedef struct
+{
+    int winner;
+    int loser;
+} pair;
+
 int
 main(int argc, char const *argv[])
 {

@@ -78,9 +78,9 @@ int get_checksum(long number)
 
             // Seperating the products into digits and summing
 
-            int inD = prod % 10;
-            sumProd += inD;
-            sumProd += (prod / 10);
+            int inD = prod % 10;    // Get first digit of product
+            sumProd += inD;         // Add to the sum
+            sumProd += (prod / 10); // Get second digit of product and add to sum
 
             printf("Inner D: %i\n", inD);
 

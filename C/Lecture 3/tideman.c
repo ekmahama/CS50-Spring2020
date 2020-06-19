@@ -207,7 +207,7 @@ bool cycles(int winner, int loser)
     {
         if (locked[i][winner])
         {
-            cycles(winner,i);
+            cycles(winner, i);
         }
     }
     return false;
